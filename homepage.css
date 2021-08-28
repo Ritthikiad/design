@@ -1,0 +1,23 @@
+bg-light {
+    background-color: #f8f9fa!important;
+}
+
+.navbar {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+}
+
+#h22 {
+    margin: 5px 0px 5px 20px;
+}
+
+.justดูit {
+    margin: 20px 0px 0px 20px;
+    border-radius: 50%;
+    
+}
