@@ -1,3 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 bg-light {
     background-color: #f8f9fa!important;
 }
@@ -12,12 +18,46 @@ bg-light {
     padding-bottom: .5rem;
 }
 
-#h22 {
-    margin: 5px 0px 5px 20px;
+.main {
+    width: 540px;
+    margin: 3px;
+    height: 425px;
+    box-shadow: 3px 3px 10px rgb(0, 0, 0, 0.2);
+    border-radius: 50px;
+    position: relative;
 }
 
-.justดูit {
-    margin: 20px 0px 0px 20px;
+#h22 {
+    margin: 10px 0px 15px 20px;
+}
+
+.pf, #img1 {
+    position: absolute;
+    top: 75px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 999;
+    padding: .5rem 2rem;
     border-radius: 50%;
-    
+}
+
+.img img {
+    height: 200px;
+    width: 540px;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+}
+
+.content {
+    margin: 35px 0px 0px 0px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+.content p {
+    color: #8d8d8d;
+    font-size: 12px;
 }
