@@ -23,18 +23,23 @@ bg-light {
     box-sizing: border-box;
     flex-direction: row;
     flex-wrap: wrap;
-    padding: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 1rem;
+    justify-content: center;
+    
 }
 
 .main {
     display: block;
     width: 432px;
     height: 340px;
-    margin: 1rem auto;
-    box-shadow: 3px 3px 10px rgb(0, 0, 0, 0.2);
+    margin:  25px 85px 25px 85px ;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
     border-radius: 50px;
     position: relative;
     box-sizing: border-box;
+    
 }
 
 #h22 {
