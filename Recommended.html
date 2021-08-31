@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <title>Homepage</title>
+    <link rel="stylesheet" href="Recommended.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="/">หน้าหลัก</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="/search">ค้นหา</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="/search/tag">ประเภท</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/profile">ข้อมูลส่วนตัว</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/logout">ออกจากระบบ</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <h2 id="h22">Partner ที่น่าจับตามอง</h2>
+
+    <div class="container">
+        <!-- นามบัตรบริษัท -->
+
+        <div class="box-item">
+            <img
+                src="data:image/png;base64,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">
+
+            <div class="item">
+                <div class="name">
+                    <h3>AIS</h3>
+                    <p>ประเภท</p>
+                </div>
+                <div class="details">
+                    <p>รายละเอียด</p>
+                </div>
+                <div class="footer">
+                    <div class="foot-l">
+                        <nan>เรทราคา : nan</p>
+                    </div>
+                    <div class="footer-r">
+                        <p>Email : sps1@gmail </p>
+                    </div>
+                </div>
+            </div>
+        </div><div class="box-item">
+            <img
+                src="data:image/png;base64,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">
+
+            <div class="item">
+                <div class="name">
+                    <h3>AIS</h3>
+                    <p>ประเภท</p>
+                </div>
+                <div class="details">
+                    <p>รายละเอียด</p>
+                </div>
+                <div class="footer">
+                    <div class="foot-l">
+                        <nan>เรทราคา : nan</p>
+                    </div>
+                    <div class="footer-r">
+                        <p>Email : sps1@gmail </p>
+                    </div>
+                </div>
+            </div>
+        </div><div class="box-item">
+            <img
+                src="data:image/png;base64,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">
+
+            <div class="item">
+                <div class="name">
+                    <h3>AIS</h3>
+                    <p>ประเภท</p>
+                </div>
+                <div class="details">
+                    <p>รายละเอียด</p>
+                </div>
+                <div class="footer">
+                    <div class="foot-l">
+                        <nan>เรทราคา : nan</p>
+                    </div>
+                    <div class="footer-r">
+                        <p>Email : sps1@gmail </p>
+                    </div>
+                </div>
+            </div>
+        </div><div class="box-item">
+            <img
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAABDlBMVEX///9hTkjJ2zF0pUFXQTrG2DJZRD6xqafKxsS/1DO60TW90jTH2DLC1TNaRj/J2zC3zje4zjerxTqtxzmmwjufvjyauz2ooJ2yyziQtD6Vtz2Hrz/G2ReKsD+ivztUPTZ/q0BuXVj8/fRqny9wozrs8r/T4V/4+uebkY7U0M/i396/ubfu7OyQhYGBc2/h69hlnSTK27rB1q/x9c/O3kng6pXh6p/c54Xr8deimZbw9euvypeUuHFZlgCNtWSgwIKCrlWrx5F2pi3Q31Cbu2C4zo3Q3rKJsCrg6sqzy3np8LTa5n7J2pqlwk2XuCfh6sOqxXu4zl7B1KDR35LR37np8LfA1FOcvFCvyWN3aGNDwB7PAAAIEklEQVR4nO2aeVfaShiHAcNmvQkqCmowEgyLLNayKe3tAu3FlVtrba/f/4vcmWQSskwANSyn5/f80dMKhXn6zrzLpKEQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACWTO+U0lv2MuZC7+z9h7W3BZ23f3/8wyR7Z5+OC4Xj4zWd47ef/iy/03ef3xaYnO73RV32koKk937NZvfH+fXefXboLWZ/lub+DSaXHwqFNQeFz6cL+F61sxDH3vsjZ/hIAAvvFvHNhG577l9x9rF/RHAG8MPiEmhH1ub58ac/DnQ/h+Jx4Wye3+lGkwfNeX32z6/9A8KR07Gw6Ap/LsvFeTieftsb5nK5A5ujIbioEzim1AreUf3n93Bvby+XY45mGI+O1xaRQj0UZUkeBHgeL6+Gw/09nZwzjP0PwX3Ls+jKkiRvdALpMM6/7Y529ymWouXY/xHEN7yIa1mKSLJ089rNen57N9rZpfAcDy4DWewLlyZJkQgJZOsVTQDVGx3u7BiKu5Yic+x/Xe4UoRblCEEiWeclkuq/V+nRVvqQsON1pIbD78Ev+pm0yU6N6IGUB+3mM86kenl7n93eTut4FJnjcHlHcIxmKBqRlIqdWSx7/z7cZ7PEb2trKz3Bcfhz/uufAXVgOeqhlFs3Ha3E91TVpvZwn1pfT+mCuqK/4/5SqiCP9lhRt6Sacqt40+48aprWbDbJr4+d9s39rySB6KWooMfRcRz394e/V2jSbW7IETeSxFQJ5HfRqGFH2NxM2R23HI6W4mj5OcZB1xFGRjQa3Yjq/EVIJt8QdMXU2NFvq47+WbaSnXekZDVbUx2TNkc9jv5bdXS3uJuEmdDvFto8xbHjOIxvpm7V0dWyjdz0/qbDTanoF0a34ziMPMdRepl9mg9nxhW0tvGs47jJPY6rF0CdL/2+fsnQkV95HLfvzpft4sPHo/53Wr/U9mTHyccxm12pFOpAJWNOX2+y+I4zHcf1h2VrTOK0f5AbGqOOyt2r06pjav1hQhNTi5fL8Zrfq5VqhfPTk2rmopyJJ05eLWfwc5jL7Q2/GX94JOXRI+naqkn7Vl2f6BeqKjFRjCkJ7ou1sCIoeZd+rSwogkiICYrSqAai+GOYI+PAkJ2k867skYz6OL5J/tIvfFQ/yYQS1lG44dBfEvOOn5UVMTxGFJSLIBS/D/f2SMe8a8482o1HknMcSbf6YHQw7a7fJ+fNlT5xXmT6im2j1vKxsIuYEkQcv9KRh/SUd1ZGbHY39Mbb5zhGo/LgwSgPJEG1/D63opjr5AUxbtgIti0cFt2C9O/GA1D8TQV3d3dGh7fWhis9dgdswDBMo1RTHzwGXY31nyW6p30PYsNasFifxbDOEySKARj29MGHDAeHo9GVvXSfa52bYitiTlN0eNTGV3RakfxM9r2yO1Fsq/TmU4/hOOQxQYiNbfmn+LmKd4bgYTq9NUrfzjIhNLsSje+Ehz1lW0jEjOdlj6EZQuEpnqhUy3kz6XD+dV6AendI/A5pB01asOyv24lNmErPqX4lKV/7vqkm2Lea4HndY2gKmqnlxEisMc4OfwnqfyPdL02bTNKGrWfvb7m3UyWtPZBYrpXkjv8nZgwD97ot3IYngufI1uoKKYqvE7NxNbIJZrOkmieTm7+6ncdms0Rpatedm0FEHpeSiYIhtj3LeRbFqYYKZz/XKoFsUcbtiPpZgqnU5jqRTEbNaxvZVUAmbVHSzhghEWpVw0RxN2huw4o3hoFzSQahbUtwk3YttLLT+qdXQ2enMynJhKxq37DOo3u3+cQwLPJ7vGBQ6XW2IbhpCv5lCLr9InJrYsZlqZ+un+VId9J3G9bMfkaoB9Vz87hNcQU5AbyZfC1qVvvQ+ICVne/w5FLzwIZFJZ/hDR3BULqnN79UkO1QH8FJRzBkJcaY3nE9ceuaxzBua0pFJdyIzyuUWmrdJsg7gpJcnNYTsGof06VY0nFVfW/XFnZApq6nYKYnLw9kbvAXlOTW1IfkNdGRF9mOFR3v8RpWlLALQQyi7eagdogeN8fQ56pTNqh99WyfseLvrPqc2aIienpvIT+3vVqkDy2cAaRzxWz/kYMtzxwLayw4jmmXY0iaGMHjGEjjzaV0XYwas5P5tEYqXs92a29We3dT7aj6PEOSoi7Cbknn5g4W9fy6XWzRULaK7evzmR+b5dna4tU4pZrIsHNpr/p8Q0Ilk4/ZLWOB3GQEipUxxJiBtV77jvM1JNQSdXEs6Z1Llk2DP6uHnVV/kiGl0jDHr/mdxBdyIvgJ0kbcets0w1AowT7IO3ktmbJvCM0mR2e6YYgd39iqGXpuBB1Yb/MYVp/ydWdjxwaqVTM020vRTizmmfXdhnWFtqMOmer0MC8DM1gZB9ULpmhVfZchm0CEfMLzUSuWaVh6cM9KVnNqVX2XYdXMT0I4o19d1KpWelrc6mch7/fvzoysqu8yTIwzMH0oQzDPs7haFZ9Ve9F7Q1ZzPaZxn0PfGhPMfWlgsFLBe6DGmlOzYHhvonwu9VcskzKNPOcllktMQ097Xmt45kMq6L0tXy7GugXu4Gp0c+YuZbvW/tyl0lBccQzm4Vqw5IWwKPCeF9LJXyQVz0qycUV0F8DQSTmsmKVTFIXYxWqdQYN4o+F39VC7eLI/uK7UnzgXhyfx+hNtF/KNixWr9AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAzMT/JLsOCW6w57YAAAAASUVORK5CYII=">
+
+            <div class="item">
+                <div class="name">
+                    <h3>AIS</h3>
+                    <p>ประเภท</p>
+                </div>
+                <div class="details">
+                    <p>รายละเอียด</p>
+                </div>
+                <div class="footer">
+                    <div class="foot-l">
+                        <nan>เรทราคา : nan</p>
+                    </div>
+                    <div class="footer-r">
+                        <p>Email : sps1@gmail </p>
+                    </div>
+                </div>
+            </div>
+        </div><div class="box-item">
+            <img
+                src="data:image/png;base64,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">
+
+            <div class="item">
+                <div class="name">
+                    <h3>AIS</h3>
+                    <p>ประเภท</p>
+                </div>
+                <div class="details">
+                    <p>รายละเอียด</p>
+                </div>
+                <div class="footer">
+                    <div class="foot-l">
+                        <nan>เรทราคา : nan</p>
+                    </div>
+                    <div class="footer-r">
+                        <p>Email : sps1@gmail </p>
+                    </div>
+                </div>
+            </div>
+        </div><div class="box-item">
+            <img
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAABDlBMVEX///9hTkjJ2zF0pUFXQTrG2DJZRD6xqafKxsS/1DO60TW90jTH2DLC1TNaRj/J2zC3zje4zjerxTqtxzmmwjufvjyauz2ooJ2yyziQtD6Vtz2Hrz/G2ReKsD+ivztUPTZ/q0BuXVj8/fRqny9wozrs8r/T4V/4+uebkY7U0M/i396/ubfu7OyQhYGBc2/h69hlnSTK27rB1q/x9c/O3kng6pXh6p/c54Xr8deimZbw9euvypeUuHFZlgCNtWSgwIKCrlWrx5F2pi3Q31Cbu2C4zo3Q3rKJsCrg6sqzy3np8LTa5n7J2pqlwk2XuCfh6sOqxXu4zl7B1KDR35LR37np8LfA1FOcvFCvyWN3aGNDwB7PAAAIEklEQVR4nO2aeVfaShiHAcNmvQkqCmowEgyLLNayKe3tAu3FlVtrba/f/4vcmWQSskwANSyn5/f80dMKhXn6zrzLpKEQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACWTO+U0lv2MuZC7+z9h7W3BZ23f3/8wyR7Z5+OC4Xj4zWd47ef/iy/03ef3xaYnO73RV32koKk937NZvfH+fXefXboLWZ/lub+DSaXHwqFNQeFz6cL+F61sxDH3vsjZ/hIAAvvFvHNhG577l9x9rF/RHAG8MPiEmhH1ub58ac/DnQ/h+Jx4Wye3+lGkwfNeX32z6/9A8KR07Gw6Ap/LsvFeTieftsb5nK5A5ujIbioEzim1AreUf3n93Bvby+XY45mGI+O1xaRQj0UZUkeBHgeL6+Gw/09nZwzjP0PwX3Ls+jKkiRvdALpMM6/7Y529ymWouXY/xHEN7yIa1mKSLJ089rNen57N9rZpfAcDy4DWewLlyZJkQgJZOsVTQDVGx3u7BiKu5Yic+x/Xe4UoRblCEEiWeclkuq/V+nRVvqQsON1pIbD78Ev+pm0yU6N6IGUB+3mM86kenl7n93eTut4FJnjcHlHcIxmKBqRlIqdWSx7/z7cZ7PEb2trKz3Bcfhz/uufAXVgOeqhlFs3Ha3E91TVpvZwn1pfT+mCuqK/4/5SqiCP9lhRt6Sacqt40+48aprWbDbJr4+d9s39rySB6KWooMfRcRz394e/V2jSbW7IETeSxFQJ5HfRqGFH2NxM2R23HI6W4mj5OcZB1xFGRjQa3Yjq/EVIJt8QdMXU2NFvq47+WbaSnXekZDVbUx2TNkc9jv5bdXS3uJuEmdDvFto8xbHjOIxvpm7V0dWyjdz0/qbDTanoF0a34ziMPMdRepl9mg9nxhW0tvGs47jJPY6rF0CdL/2+fsnQkV95HLfvzpft4sPHo/53Wr/U9mTHyccxm12pFOpAJWNOX2+y+I4zHcf1h2VrTOK0f5AbGqOOyt2r06pjav1hQhNTi5fL8Zrfq5VqhfPTk2rmopyJJ05eLWfwc5jL7Q2/GX94JOXRI+naqkn7Vl2f6BeqKjFRjCkJ7ou1sCIoeZd+rSwogkiICYrSqAai+GOYI+PAkJ2k867skYz6OL5J/tIvfFQ/yYQS1lG44dBfEvOOn5UVMTxGFJSLIBS/D/f2SMe8a8482o1HknMcSbf6YHQw7a7fJ+fNlT5xXmT6im2j1vKxsIuYEkQcv9KRh/SUd1ZGbHY39Mbb5zhGo/LgwSgPJEG1/D63opjr5AUxbtgIti0cFt2C9O/GA1D8TQV3d3dGh7fWhis9dgdswDBMo1RTHzwGXY31nyW6p30PYsNasFifxbDOEySKARj29MGHDAeHo9GVvXSfa52bYitiTlN0eNTGV3RakfxM9r2yO1Fsq/TmU4/hOOQxQYiNbfmn+LmKd4bgYTq9NUrfzjIhNLsSje+Ehz1lW0jEjOdlj6EZQuEpnqhUy3kz6XD+dV6AendI/A5pB01asOyv24lNmErPqX4lKV/7vqkm2Lea4HndY2gKmqnlxEisMc4OfwnqfyPdL02bTNKGrWfvb7m3UyWtPZBYrpXkjv8nZgwD97ot3IYngufI1uoKKYqvE7NxNbIJZrOkmieTm7+6ncdms0Rpatedm0FEHpeSiYIhtj3LeRbFqYYKZz/XKoFsUcbtiPpZgqnU5jqRTEbNaxvZVUAmbVHSzhghEWpVw0RxN2huw4o3hoFzSQahbUtwk3YttLLT+qdXQ2enMynJhKxq37DOo3u3+cQwLPJ7vGBQ6XW2IbhpCv5lCLr9InJrYsZlqZ+un+VId9J3G9bMfkaoB9Vz87hNcQU5AbyZfC1qVvvQ+ICVne/w5FLzwIZFJZ/hDR3BULqnN79UkO1QH8FJRzBkJcaY3nE9ceuaxzBua0pFJdyIzyuUWmrdJsg7gpJcnNYTsGof06VY0nFVfW/XFnZApq6nYKYnLw9kbvAXlOTW1IfkNdGRF9mOFR3v8RpWlLALQQyi7eagdogeN8fQ56pTNqh99WyfseLvrPqc2aIienpvIT+3vVqkDy2cAaRzxWz/kYMtzxwLayw4jmmXY0iaGMHjGEjjzaV0XYwas5P5tEYqXs92a29We3dT7aj6PEOSoi7Cbknn5g4W9fy6XWzRULaK7evzmR+b5dna4tU4pZrIsHNpr/p8Q0Ilk4/ZLWOB3GQEipUxxJiBtV77jvM1JNQSdXEs6Z1Llk2DP6uHnVV/kiGl0jDHr/mdxBdyIvgJ0kbcets0w1AowT7IO3ktmbJvCM0mR2e6YYgd39iqGXpuBB1Yb/MYVp/ydWdjxwaqVTM020vRTizmmfXdhnWFtqMOmer0MC8DM1gZB9ULpmhVfZchm0CEfMLzUSuWaVh6cM9KVnNqVX2XYdXMT0I4o19d1KpWelrc6mch7/fvzoysqu8yTIwzMH0oQzDPs7haFZ9Ve9F7Q1ZzPaZxn0PfGhPMfWlgsFLBe6DGmlOzYHhvonwu9VcskzKNPOcllktMQ097Xmt45kMq6L0tXy7GugXu4Gp0c+YuZbvW/tyl0lBccQzm4Vqw5IWwKPCeF9LJXyQVz0qycUV0F8DQSTmsmKVTFIXYxWqdQYN4o+F39VC7eLI/uK7UnzgXhyfx+hNtF/KNixWr9AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAzMT/JLsOCW6w57YAAAAASUVORK5CYII=">
+
+            <div class="item">
+                <div class="name">
+                    <h3>AIS</h3>
+                    <p>ประเภท</p>
+                </div>
+                <div class="details">
+                    <p>รายละเอียด</p>
+                </div>
+                <div class="footer">
+                    <div class="foot-l">
+                        <nan>เรทราคา : nan</p>
+                    </div>
+                    <div class="footer-r">
+                        <p>Email : sps1@gmail </p>
+                    </div>
+                </div>
+            </div>
+        </div><div class="box-item">
+            <img
+                src="data:image/png;base64,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">
+
+            <div class="item">
+                <div class="name">
+                    <h3>AIS</h3>
+                    <p>ประเภท</p>
+                </div>
+                <div class="details">
+                    <p>รายละเอียด</p>
+                </div>
+                <div class="footer">
+                    <div class="foot-l">
+                        <nan>เรทราคา : nan</p>
+                    </div>
+                    <div class="footer-r">
+                        <p>Email : sps1@gmail </p>
+                    </div>
+                </div>
+            </div>
+        </div><div class="box-item">
+            <img
+                src="data:image/png;base64,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">
+
+            <div class="item">
+                <div class="name">
+                    <h3>AIS</h3>
+                    <p>ประเภท</p>
+                </div>
+                <div class="details">
+                    <p>รายละเอียด</p>
+                </div>
+                <div class="footer">
+                    <div class="foot-l">
+                        <nan>เรทราคา : nan</p>
+                    </div>
+                    <div class="footer-r">
+                        <p>Email : sps1@gmail </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

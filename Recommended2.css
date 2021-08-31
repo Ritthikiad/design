@@ -27,23 +27,21 @@ bg-light {
     padding-right: 1rem;
     padding-bottom: 1rem;
     justify-content: center;
-    
 }
 
 .main {
     display: block;
     width: 432px;
     height: 340px;
-    margin:  25px 85px 25px 85px ;
+    margin: 25px 85px 25px 85px;
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
     border-radius: 50px;
     position: relative;
     box-sizing: border-box;
-    
 }
 
 #h22 {
-    margin: 10px 0px 15px 20px;
+    margin: 2rem;
 }
 
 .pf, #img1 {
@@ -55,6 +53,13 @@ bg-light {
 }
 
 .img img {
+    height: 160px;
+    width: 432px;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+}
+
+.img iframe {
     height: 160px;
     width: 432px;
     border-top-left-radius: 50px;
